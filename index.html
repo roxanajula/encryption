@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Security</title>
+    
+    
+    
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    <html>
+
+<head>
+  <title>Ecryption Algorithms</title>
+</head>
+
+<body>
+  <div class="row">
+
+    <!--Cipher Shift-->
+    <div class="col-lg-6">
+      <div class="well bs-component">
+        <form class="form-horizontal">
+          <fieldset>
+            <legend>Shift Cipher</legend>
+            <div class="form-group">
+              <label for="textArea" class="col-lg-1 control-label">Input</label>
+              <div class="col-lg-11">
+                <textarea id="inputTextShift" class="form-control" rows="3"></textarea>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="select" class="col-lg-1 control-label">Key</label>
+              <div class="col-lg-2">
+                <select class="form-control" id="shiftKey">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              <option value="16">16</option>
+              <option value="17">17</option>
+              <option value="18">18</option>
+              <option value="19">19</option>
+              <option value="20">20</option>
+              <option value="21">21</option>
+              <option value="22">22</option>
+              <option value="23">23</option>
+              <option value="24">24</option>
+              <option value="25">25</option>
+              <option value="26">26</option>
+            </select>
+                <br>
+              </div>
+              <div class="col-lg-4">
+                <a href="#" class="btn btn-primary" onclick="shiftCipher(false)">Encrypt</a>
+                <a href="#" class="btn btn-primary" onclick="shiftCipher(true)">Decrypt</a>
+              </div>
+
+            </div>
+
+            <div class="form-group">
+              <label for="textArea" class="col-lg-1 control-label">Output</label>
+              <div class="col-lg-11">
+                <textarea id="outputTextShift" class="form-control" rows="3"></textarea>
+              </div>
+            </div>
+
+          </fieldset>
+        </form>
+      </div>
+    </div>
+
+    <!--Vigenere cipher -->
+    <div class="col-lg-6">
+      <div class="well bs-component">
+        <form class="form-horizontal">
+          <fieldset>
+            <legend>Vigenere Cipher</legend>
+            <div class="form-group">
+              <label for="textArea" class="col-lg-1 control-label">Input</label>
+              <div class="col-lg-11">
+                <textarea id="inputTextVigenere" class="form-control" rows="3"></textarea>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="col-lg-1 control-label">Key</label>
+              <div class="col-lg-3">
+                <input type="text" class="form-control" id="vigenereKey" placeholder="Key Word">
+                <br>
+              </div>
+              <div class="col-lg-4">
+                <a href="#" class="btn btn-primary" onclick="vigenereCipher(false)">Encrypt</a>
+                <a href="#" class="btn btn-primary" onclick="vigenereCipher(true)">Decrypt</a>
+              </div>
+
+            </div>
+
+            <div class="form-group">
+              <label for="textArea" class="col-lg-1 control-label">Output</label>
+              <div class="col-lg-11">
+                <textarea id="outputTextVigenere" class="form-control" rows="3"></textarea>
+              </div>
+            </div>
+
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+
+    <!--GCD-->
+    <div class="col-lg-6">
+      <div class="well bs-component">
+        <form class="form-horizontal">
+          <fieldset>
+            <legend>Greatest Common Denominator</legend>
+            <div class="form-group">
+              <label for="text" class="col-lg-1 control-label">Numbers</label>
+              <div class="col-lg-2">
+                <input type="text" class="form-control" id="gcdFirstNr" placeholder="a">
+                <br>
+              </div>
+              <div class="col-lg-2">
+                <input type="text" class="form-control" id="gcdSecondNr" placeholder="b">
+                <br>
+              </div>
+              <div class="col-lg-3">
+                <a href="#" class="btn btn-primary" onclick="gcd()">Calculate GCD</a>
+                <br>
+              </div>
+              <label for="text" class="col-lg-1 control-label">Result</label>
+              <div class="col-lg-2">
+                <output type="text" id="gcdResult" class="form-control">
+                <br>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
+    
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>

@@ -30,7 +30,6 @@ function shiftCipher(isDecrypt) {
 function vigenereCipher(isDecrypt) {
   var inputText = document.getElementById("inputTextVigenere").value;
   var vigenereKeyWord = document.getElementById("vigenereKey").value;
-  //We change the input text and the key word to be all uppercase for simplicity
   inputText = inputText.toUpperCase();
   vigenereKeyWord = vigenereKeyWord.toUpperCase();
   var outputText = "";
